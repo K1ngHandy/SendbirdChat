@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import React from 'react';
+import { App as SendbirdApp } from 'sendbird-uikit';
+import 'sendbird-uikit/dist/index.css';
+
 import './App.css';
+
+const APP_ID = 'FB74FE74-5EFC-4650-A15E-A72CD124DE29';
+const USER_ID = 'Demo User';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello App User</h1>
+      <SendbirdApp appId={APP_ID} userId={USER_ID} />
     </div>
   );
 }
