@@ -1,0 +1,2 @@
+# SendbirdChat
+Minimal chat app
